@@ -114,11 +114,18 @@ Single frame of 640 × 384 px, batch size 1. RTX 4090: unoptimized PyTorch. Jets
 
 ### Qualitative
 
+SAST+RGB detections (event histogram left, RGB frame right) from the thesis, Figures 6.7 and 6.8.
+RGB-only YOLOX produces false positives in the forest area of such scenes; the fused model does not.
+
 <p align="center">
-  <img src="figures/detections_sast_rgb_high_activity.png" width="750" alt="SAST+RGB detections on a complex background with high event activity">
+  <img src="figures/detections_sast_rgb_low_activity.png" width="750" alt="SAST+RGB detections on a complex background with low event activity: three drones over a forest">
   <br>
-  <em>SAST+RGB detections (RGB frame left, event histogram right) on a complex background with high event activity.
-  RGB-only YOLOX produces false positives in the forest area of such scenes; the fused model does not.</em>
+  <em>Complex background, low event activity: three drones detected.</em>
+</p>
+<p align="center">
+  <img src="figures/detections_sast_rgb_high_activity.png" width="750" alt="SAST+RGB detection on a complex background with high event activity: one small drone in front of mountains">
+  <br>
+  <em>Complex background, high event activity: one small drone detected.</em>
 </p>
 
 ### Datasets
