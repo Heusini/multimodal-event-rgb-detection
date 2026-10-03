@@ -34,6 +34,7 @@ inputs, new detection heads and ONNX / TensorRT export for NVIDIA Jetson.
 ## Results
 
 Detection results on the SkyEV test set (from the SkyEV paper, Table 3). All models are trained with this code base.
+On a Jetson AGX Orin the fused model runs in **5.3 ms** per frame with TensorRT (31.3 M parameters, thesis Section 6.5).
 
 | Model              | Input        | `model=`   | AP<sub>small</sub> | mAP<sub>50-95</sub> |
 |--------------------|--------------|------------|-------------------:|--------------------:|
@@ -48,8 +49,8 @@ Detection results on the SkyEV test set (from the SkyEV paper, Table 3). All mod
 <summary>Earlier thesis evaluation, including the LW-DETR variants</summary>
 <br>
 
-Preliminary evaluation from the thesis on an earlier SkyEV split (internally called *StStephan*). The numbers are
-not directly comparable with the table above.
+Evaluation from the thesis on the *StStephan* subset of SkyEV. The thesis refers to SkyEV by its working title
+*F-UAV-D*. These numbers are not directly comparable with the published table above.
 
 <p align="center">
   <img src="figures/performance.png" width="750" alt="Earlier thesis results table">
@@ -60,7 +61,9 @@ not directly comparable with the table above.
 ### Datasets
 
 - **[SkyEV](https://arxiv.org/abs/2607.18747)** — synchronized, uncompressed RGB + event recordings of eight drone
-  types with strong camera ego-motion and very small targets (median box 41 px). Download: *TODO: add link once public*.
+  types with strong camera ego-motion and very small targets (median box 41 px). The thesis and the preprocessing
+  scripts use its working title *F-UAV-D* (`preprocessing/armasuisse.py`); *StStephan* is one of its subsets.
+  Download: *TODO: add link once public*.
 - **[NeRDD](https://github.com/MagriniGabriele/NeRDD)** — Neuromorphic RGB-Event Drone Detection dataset, used as a
   second benchmark.
 
