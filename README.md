@@ -3,7 +3,6 @@
 **Master's thesis · MSc Robotics, Systems and Control · ETH Zürich, Center for Project-Based Learning (PBL), D-ITET · 2025**
 
 [![Paper](https://img.shields.io/badge/arXiv-2607.18747-b31b1b.svg)](https://arxiv.org/abs/2607.18747)
-[![Thesis](https://img.shields.io/badge/Thesis-PDF-blue.svg)](https://github.com/Heusini/SAST/releases)
 [![Python](https://img.shields.io/badge/Python-3.9-3776AB.svg)](setup_env.sh)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C.svg)](setup_env.sh)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -63,7 +62,7 @@ Evaluation from the thesis on the *StStephan* subset of SkyEV. The thesis refers
 - **[SkyEV](https://arxiv.org/abs/2607.18747)** — synchronized, uncompressed RGB + event recordings of eight drone
   types with strong camera ego-motion and very small targets (median box 41 px). The thesis and the preprocessing
   scripts use its working title *F-UAV-D* (`preprocessing/armasuisse.py`); *StStephan* is one of its subsets.
-  Download: *TODO: add link once public*.
+  The dataset is not publicly released yet; see the paper for details.
 - **[NeRDD](https://github.com/MagriniGabriele/NeRDD)** — Neuromorphic RGB-Event Drone Detection dataset, used as a
   second benchmark.
 
@@ -165,9 +164,7 @@ utils/, util/    Evaluation (Prophesee / COCO), optimizers, timers, helpers
 train.py, validation.py, export.py, run_onnx.py
 ```
 
-## Thesis and citation
-
-The full thesis is available as a PDF: *TODO: add link (GitHub release asset or `docs/thesis.pdf`)*.
+## Citation
 
 ```bibtex
 @mastersthesis{heusinger2025multimodal,
