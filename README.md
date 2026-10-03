@@ -212,7 +212,7 @@ python export.py          # exports the model from config/detect_lwdetr.yaml to 
 python run_onnx.py        # latency benchmark of model.onnx with onnxruntime (CUDA execution provider)
 ```
 
-The [`tensorrt`](https://github.com/Heusini/SAST/tree/tensorrt) branch contains the model changes needed for a
+The [`tensorrt`](https://github.com/Heusini/multimodal-event-rgb-detection/tree/tensorrt) branch contains the model changes needed for a
 clean TensorRT conversion of SAST, plus benchmark scripts.
 
 ## Repository layout
